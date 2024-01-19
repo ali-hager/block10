@@ -1,0 +1,83 @@
+body{
+  background-color: rgb(175, 195, 211);
+}
+
+/* Build the canvas */
+.beach{
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  height: 600px;
+  width: 300px;
+  border-radius: 5%;
+  /*overflow: hidden;*/
+  box-shadow: 30px 30px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Sky first */
+.sky {
+  height: 240px;
+  width: 300px;
+  background-color: antiquewhite;
+  box-shadow: 3px 1px 35px antiquewhite;
+}
+
+.sun-left{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  height: 70px;
+  width: 70px;
+  background-image: radial-gradient(#feca3e 58%, #ff8000 80%);
+  border-radius: 50%;
+}
+
+.sun-right{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  height: 70px;
+  width: 70px;
+  background-image: radial-gradient(#feca3e 58%, #ff8000 80%);
+  border-radius: 50%;
+}
+
+.photo{
+  z-index: -1px;
+}
+
+.ocean {
+  height: 360px;
+  width: 300px;
+  background-color: rgb(126, 150, 212);
+  box-shadow: 3px 1px 35px rgb(126, 150, 212);
+}
+
+/*was going to add gradient colors to the ocean but not today!
+
+.teal
+
+.lightBlue
+
+.darkBlue
+
+*/
+
+@media (max-width: 1680px){
+  width: 100%
+}
+
+@media (max-width: 1024px){
+  width: 100%
+}
+
+@media (max-width: 480px){
+  width: 100%
+}
